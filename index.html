@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kanyeplsdrop | Home</title>
+    <link rel="icon" href="https://ruffle.rs/favicon-180.png" type="image/png"> <style>
+        /* Basic Reset & Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e; /* Dark background */
+            color: #e0e0e0; /* Light text color */
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #0f3460; /* Darker blue */
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #e94560; /* Accent color on hover */
+        }
+
+        /* Main Content Area */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2 {
+            color: #e94560; /* Accent color for headings */
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        /* Game Grid */
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+            gap: 25px;
+            padding: 20px 0;
+        }
+
+        .game-card {
+            background-color: #2e2e4a; /* Slightly lighter dark background */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.6);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 180px; /* Fixed height for consistent card size */
+            object-fit: cover; /* Ensures images cover the area without distortion */
+            display: block;
+        }
+
+        .game-card h3 {
+            margin: 15px 0 10px;
+            color: #f0f0f0;
+            font-size: 1.3em;
+        }
+
+        .game-card p {
+            font-size: 0.9em;
+            color: #a0a0a0;
+            padding: 0 15px;
+            margin-bottom: 15px;
+        }
+
+        .game-card a.play-button {
+            display: inline-block;
+            background-color: #e94560;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .game-card a.play-button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f3460;
+            color: #a0a0a0;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 50px;
+        }
+    </style>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+    <header>
+        <h1>Arcade Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#html5-games">HTML5 Games</a></li>
+                <li><a href="#flash-games">Flash Games</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="html5-games">
+            <h2>Our HTML5 Games</h2>
+            <div class="game-grid">
+                <div class="game-card">
+                    <img src="https://images.crazygames.com/jetpack-joyride-pcp_16x9/20250121090354/jetpack-joyride-pcp_16x9-cover?auto=format,compress&q=75&cs=strip" alt="Game 1 Thumbnail">
+                    <h3>Jetpack Joyride</h3>
+                    <p>HTLM5 Mobile Game</p>
+                    <a href="https://kanyeplsdrop.github.io/jetpackgoyride/" class="play-button">Play Now</a>
+                </div>
+
+                <div class="game-card">
+                    <img src="https://m.media-amazon.com/images/I/A1OGHmQseNL.png" alt="Game 2 Thumbnail">
+                    <h3>Block Blast</h3>
+                    <p>HTML5 Mobile Game</p>
+                    <a href="https://kanyeplsdrop.github.io/blockblast/" class="play-button">Play Now</a>
+                </div>
+
+                <div class="game-card">
+                    <img src="https://cdn.thegamesdb.net/images/original/boxart/front/30217-1.jpg" alt="Game 3 Thumbnail">
+                    <h3>Puzzle Mania</h3>
+                    <p>HTML5 Mobile Game</p>
+                    <a href="https://kanyeplsdrop.github.io/doodleHUMPhahaveryfunny/" class="play-button">Play Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="flash-games">
+            <h2>Classic Flash Games (Powered by Ruffle)</h2>
+            <div class="game-grid">
+                <div class="game-card">
+                    <img src="https://www.primarygames.com/arcade/action/run/logo200.png" alt="Game 4 Thumbnail">
+                    <h3>Run 2</h3>
+                    <p>Flash Game</p>
+                    <a href="https://kanyeplsdrop.github.io/runflashclassic/" class="play-button">Play Now</a>
+                </div>
+
+                <div class="game-card">
+                    <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1668460/header.jpg?t=1725396654" alt="Game 5 Thumbnail">
+                    <h3>Fancy Pants Adventure</h3>
+                    <p>Flash Game</p>
+                    <a href="https://kanyeplsdrop.github.io/fpa/" class="play-button">Play Now</a>
+                </div>
+
+                <div class="game-card">
+                    <img src="https://images.crazygames.com/games/escaping-the-prison/cover-1657103196147.png?auto=format,compress&q=75&cs=strip" alt="Game 6 Thumbnail">
+                    <h3>Escaping the Prison</h3>
+                    <p>Flash Game</p>
+                    <a href="https://kanyeplsdrop.github.io/escapingtheprison/" class="play-button">Play Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About my website...</h2>
+            <p style="text-align: center; max-width: 800px; margin: 20px auto;">
+                Welcome to my website, this kind just a Hub for unblocked games in fullscreen, you can use these sites for your website, for free!!!!!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Arcade Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
